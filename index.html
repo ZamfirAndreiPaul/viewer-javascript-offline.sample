@@ -7,7 +7,6 @@
   <!-- The Viewer JS & CSS-->
   <link rel="stylesheet" href="https://developer.api.autodesk.com/modelderivative/v2/viewers/style.min.css?v=v7.*" type="text/css">
   <script language="JavaScript" src="https://developer.api.autodesk.com/modelderivative/v2/viewers/viewer3D.min.js?v=v7.*"></script>
-  <script src="basicbits.js"></script>
   <link rel="stylesheet" href="basicbits.css" type="text/css">
 
 </head>
@@ -21,7 +20,7 @@
     </div>
     <div id="leftSide">
       <img src="images/logo.jpg" alt="logo basicbits" class="logoImage">
-      <button class="leftButton" onclick="test()">Test</button>
+      <button class="leftButton" id="test1">Test</button>
       <button class="leftButton">Test</button>
       <button class="leftButton">Test</button>
       <button class="leftButton">Test</button>
@@ -34,8 +33,10 @@
     </div>
   </div>
   
+  <script src="basicbits.js"></script>
 
   <!-- Developer JS -->
+ <!--
   <script>
       var myViewerDiv = document.getElementById('MyViewerDiv');
       var viewer = new Autodesk.Viewing.Private.GuiViewer3D(myViewerDiv);
@@ -49,6 +50,7 @@
       });
       
   </script>
+  -->
 </body>
 
 </html>
