@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+}
+#app {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+#MyViewerDiv {
+    width: 80%;
+    height: 100%; 
+    margin: 0;
+    right : 0;
+    background-color: #F0F8FF;
+    float: right;
+    position: absolute;
+}
+#leftSide {
+  width: 20%;
+  height: 100%;
+  margin: 0;
+  left: 0;
+  background-color:#F0F8FF;
+  float: left;
+  position: absolute;
+  padding-right: 5px;
+}

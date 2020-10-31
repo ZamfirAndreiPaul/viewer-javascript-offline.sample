@@ -7,11 +7,24 @@
   <!-- The Viewer JS & CSS-->
   <link rel="stylesheet" href="https://developer.api.autodesk.com/modelderivative/v2/viewers/style.min.css?v=v7.*" type="text/css">
   <script language="JavaScript" src="https://developer.api.autodesk.com/modelderivative/v2/viewers/viewer3D.min.js?v=v7.*"></script>
+  <script src="basicbits.js"></script>
+  <link rel="stylesheet" href="basicbits.css" type="text/css">
+
 </head>
 
 <body>
-  <img src='/images/forge-logo.png' style="height:auto;width:20%;position:absolute;left:10px;top:10px;z-index:233">
-  <div id="MyViewerDiv"></div>
+  
+  <div id="app">
+
+    <div id="MyViewerDiv">
+      <img src='images/forge-logo.png' style="height:auto;width:20%;position:absolute;left:10px;top:10px;z-index:233">
+    </div>
+    <div id="leftSide">
+      
+    </div>
+
+  </div>
+  
 
   <!-- Developer JS -->
   <script>
@@ -19,11 +32,13 @@
       var viewer = new Autodesk.Viewing.Private.GuiViewer3D(myViewerDiv);
       var options = {
           'env' : 'Local',
+          'extensions' : ['BasicBits'],
           'document' : './House/f0224dd3-8767-45c1-ff99-5c9c881b9fee/0.svf'
       };
       Autodesk.Viewing.Initializer(options, function() {
         viewer.start(options.document, options);
       });
+      
   </script>
 </body>
 
