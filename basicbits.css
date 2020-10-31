@@ -1,3 +1,13 @@
+@font-face {
+	font-family: CourierPrime;
+	src: url(../fonts/CourierPrime.ttf);
+}
+
+@font-face {
+	font-family: Libre;
+	src: url(../fonts/Roboto.ttf);
+}
+
 body {
     margin: 0;
 }
@@ -20,8 +30,139 @@ body {
   height: 100%;
   margin: 0;
   left: 0;
-  background-color:#F0F8FF;
+  background-color: black;
   float: left;
   position: absolute;
   padding-right: 5px;
+  z-index: 999;
+  -webkit-box-shadow: 8px 1px 11px 0px rgba(0,0,0,0.40); 
+    box-shadow: 8px 1px 11px 0px rgba(0,0,0,0.40);
+}
+
+.leftButton{
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+    text-align: center;
+    background-color:#1360b6;
+    color:white;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    font-family: CourierPrime;
+}
+
+.leftButton:hover {
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+    text-align: center;
+    background-color: #187ced;
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    font-family: CourierPrime;
+    cursor: pointer;
+}
+
+.logoImage{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 150px;
+    width: 150px;
+    margin-top: 50px;
+}
+
+.supportButton{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+    text-align: center;
+    background-color:#1360b6;
+    position: absolute;
+    bottom: 0;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    font-family: CourierPrime;
+    text-decoration: none;
+    display: block;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.supportButton:hover{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+    text-align: center;
+    background-color:#1360b6;
+    position: absolute;
+    bottom: 0;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    font-family: CourierPrime;
+    text-decoration: none;
+    display: block;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.pdfButton{
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+    text-align: center;
+    background-color: #719d22;
+    color:white;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 130px;
+    font-family: CourierPrime;
+}
+
+.pdfButton:hover{
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+    text-align: center;
+    background-color: #95cf2d;
+    color:white;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 130px;
+    font-family: CourierPrime;
+    cursor: pointer;
 }
