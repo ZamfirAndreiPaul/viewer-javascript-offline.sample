@@ -13,13 +13,15 @@
   <img src='/images/forge-logo.png' style="height:auto;width:20%;position:absolute;left:10px;top:10px;z-index:233">
   <div id="MyViewerDiv"></div>
 
+    <h1>aaaaa</h1>
+
   <!-- Developer JS -->
   <script>
       var myViewerDiv = document.getElementById('MyViewerDiv');
       var viewer = new Autodesk.Viewing.Private.GuiViewer3D(myViewerDiv);
       var options = {
           'env' : 'Local',
-          'document' : '.\House\f0224dd3-8767-45c1-ff99-5c9c881b9fee\0.svf'
+          'document' : './shaver/0.svf'
       };
       Autodesk.Viewing.Initializer(options, function() {
         viewer.start(options.document, options);
