@@ -10,6 +10,7 @@ function MyAwesomeExtension(viewer, options) {
     alert('MyAwesomeExtension is loaded!');
     return true;
   };
+  /*
   function userFunction(pdb) {
     
     //return 42;
@@ -78,7 +79,7 @@ thePromise.then(function(retValue){
     viewer.fitToView([mostMassiveId]);
     console.log('Most massive part is', mostMassiveId, 'with Mass:', retValue.mass);
 });
-  /*this.eventTool = new EventTool(this.viewer)
+  this.eventTool = new EventTool(this.viewer)
 
     this.eventTool.on('singleclick', (event) => {
       const hitTest = this.viewer.clientToWorld(
@@ -100,6 +101,13 @@ thePromise.then(function(retValue){
     alert('MyAwesomeExtension is now unloaded!');
     return true;
   };
-  
+
+  function test(){
+    let viewer;
+    let viewerDiv = document.getElementById('MyViewerDiv');
+    viewer = new Autodesk.Viewing.Private.GuiViewer3D(viewerDiv);
+    var DBids = viewer.impl.selector.getAggregateSelection(); // Special case to handle multi-model selection
+    DBids = DBids.map( a=> {return a.selection});  // filter out the model objects
+    console.log(JSON.stringify(DBids));
+    }
   Autodesk.Viewing.theExtensionManager.registerExtension('BasicBits', MyAwesomeExtension);
-  

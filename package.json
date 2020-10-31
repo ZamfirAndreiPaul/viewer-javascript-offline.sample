@@ -1,0 +1,19 @@
+{
+  "name": "viewer-javascript-offline.sample-1",
+  "version": "1.0.0",
+  "description": "[![Viewer](https://img.shields.io/badge/Viewer-v7-green.svg)](https://forge.autodesk.com/en/docs/viewer/v6/developers_guide/overview/)",
+  "main": "basicbits.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZamfirAndreiPaul/viewer-javascript-offline.sample.git"
+  },
+  "author": "Basic Bits",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZamfirAndreiPaul/viewer-javascript-offline.sample/issues"
+  },
+  "homepage": "https://github.com/ZamfirAndreiPaul/viewer-javascript-offline.sample#readme"
+}
