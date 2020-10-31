@@ -101,13 +101,18 @@ thePromise.then(function(retValue){
     alert('MyAwesomeExtension is now unloaded!');
     return true;
   };
-
-  function test(){
+  function getSelection() {
+    // Getting selected IDs
+    var DBids = viewer.impl.selector.getAggregateSelection(); // Special case to handle multi-model selection
+    DBids = DBids.map( a=> {return a.selection});  // filter out the model objects
+    console.log(JSON.stringify(DBids));
+}
+ /* function test(){
     let viewer;
     let viewerDiv = document.getElementById('MyViewerDiv');
     viewer = new Autodesk.Viewing.Private.GuiViewer3D(viewerDiv);
     var DBids = viewer.impl.selector.getAggregateSelection(); // Special case to handle multi-model selection
     DBids = DBids.map( a=> {return a.selection});  // filter out the model objects
     console.log(JSON.stringify(DBids));
-    }
+    }*/
   Autodesk.Viewing.theExtensionManager.registerExtension('BasicBits', MyAwesomeExtension);
