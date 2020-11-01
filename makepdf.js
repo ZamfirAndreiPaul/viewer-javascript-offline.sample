@@ -1,10 +1,12 @@
 const { jsPDF } = window.jspdf;
 
+
+var test1='testare var';
 document.getElementById("makepdftest").onclick = function(){
     
     var doc = new jsPDF()
 
-    doc.text(20, 20, 'This is the default font.')
+    doc.text(20, 20, 'This is '+test1+'the default font.')
     doc.setFont('courier','normal')
     doc.text(20, 30, 'This is courier normal.')
     doc.setFont('times','italic')
