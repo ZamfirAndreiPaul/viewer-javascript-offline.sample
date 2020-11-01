@@ -40,10 +40,8 @@ body {
 }
 
 .leftButton{
-    padding-left: 120px;
-    padding-right: 120px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    width: 80%;
+    height: 4%;
     border: none;
     text-align: center;
     background-color:#1360b6;
@@ -59,14 +57,12 @@ body {
 }
 
 .leftButton:hover {
-    padding-left: 120px;
-    padding-right: 120px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    width: 80%;
+    height: 4%;
     border: none;
     text-align: center;
     background-color: #187ced;
-    color: white;
+    color:white;
     text-decoration: none;
     display: block;
     font-size: 16px;
@@ -166,3 +162,10 @@ body {
     font-family: CourierPrime;
     cursor: pointer;
 }
+
+.show-env-bg-button {
+    background: red;
+  }
+  .hide-env-bg-button {
+    background: blue;
+  }
