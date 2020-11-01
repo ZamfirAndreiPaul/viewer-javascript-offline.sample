@@ -132,6 +132,7 @@
                 b.style.display = "none";
                 cereretipArray.push(currentItem.name);
                 cereretipArrayDescription.push(document.getElementById("descriptionInput").value);
+                document.getElementById("descriptionInput").value = "";
                 console.log(cereretipArray);
                 console.log(cereretipArrayDescription);
             }
