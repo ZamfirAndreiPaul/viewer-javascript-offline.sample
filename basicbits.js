@@ -128,7 +128,7 @@
             {
                 a.style.display = "none";
                 b.style.display = "none";
-                cereretipArray.push(currentItem.name);
+                cereretipArray.push(currentItem);
                 cereretipArrayDescription.push(document.getElementById("descriptionInput").value);
                 document.getElementById("descriptionInput").value = "";
                 console.log(cereretipArray);
@@ -171,7 +171,7 @@
             {
                 a.style.display = "none";
                 b.style.display = "none";
-                apeleRoamneArray.push(currentItem.name);
+                apeleRoamneArray.push(currentItem);
                 apeleRoamneDescription.push(document.getElementById("descriptionInputApeleRoamne").value);
                 document.getElementById("descriptionInputApeleRoamne").value = "";
                 console.log(apeleRoamneArray);
@@ -214,7 +214,7 @@
             {
                 a.style.display = "none";
                 b.style.display = "none";
-                mediuArray.push(currentItem.name);
+                mediuArray.push(currentItem);
                 mediuArrayDescription.push(document.getElementById("descriptionInputMediu").value);
                 document.getElementById("descriptionInputMediu").value = "";
                 console.log(mediuArray);
@@ -257,7 +257,7 @@
             {
                 a.style.display = "none";
                 b.style.display = "none";
-                sanatateArray.push(currentItem.name);
+                sanatateArray.push(currentItem);
                 sanatateArrayDescription.push(document.getElementById("descriptionInput").value);
                 document.getElementById("descriptionInputSanatate").value = "";
                 console.log(sanatateArray);
@@ -300,7 +300,7 @@
             {
                 a.style.display = "none";
                 b.style.display = "none";
-                isuArray.push(currentItem.name);
+                isuArray.push(currentItem);
                 isuArrayDescription.push(document.getElementById("descriptionInputISU").value);
                 document.getElementById("descriptionInputISU").value = "";
                 console.log(isuArray);
