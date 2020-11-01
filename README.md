@@ -36,29 +36,8 @@ Alternatively feel free to spin this sample up with your favorite web server (II
 
 Navigate to [http://localhost:8000](http://localhost:8000) on Chrome/Firefox/IE 11+/Safari/Opera to see the result.
 
-## Tips and Tricks
-
-To view other models, replace value of `'document'` of `'options'` with the url below:
-
-__Shaver__
-````
-http://developer-autodesk.github.io/translated-models/shaver/0.svf
-````
-![](http://autodesk-forge.github.io/viewer-javascript-offline.sample/shaver.png)
-
-
-__House__
-```
-http://developer-autodesk.github.io/translated-models/dwfx-sample-house/f0224dd3-8767-45c1-ff99-5c9c881b9fee/0.svf
-```
-![thumbnail](https://user-images.githubusercontent.com/10786558/45990589-98cc3980-c0b3-11e8-908f-fa2caf0cadbb.png)
-
-You can also download those translated models from this [GitHub repo](https://github.com/Developer-Autodesk/translated-models).
-
-You can translate your own models at [extract.autodesk.io](http://extract.autodesk.io).
-
 ## Written By
-Shiya Luo & Bryan Huang
+Zamfir Andrei-Paul & Dinu Alexandru & Baciu Andrei
 
 ## Thumbnail
 ![Thumbnail](/thumbnail.png)
