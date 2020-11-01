@@ -8,8 +8,6 @@
   <link rel="stylesheet" href="https://developer.api.autodesk.com/modelderivative/v2/viewers/style.min.css?v=v7.*" type="text/css">
   <script language="JavaScript" src="https://developer.api.autodesk.com/modelderivative/v2/viewers/viewer3D.min.js?v=v7.*"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.1.1/jspdf.umd.min.js"></script>
-  <script src="https://unpkg.com/pdf-lib@1.11.2"></script>
-  <script src="https://unpkg.com/downloadjs@1.4.7"></script>
   <link rel="stylesheet" href="basicbits.css" type="text/css">
 
 </head>
@@ -199,24 +197,9 @@
   
   <script src="basicbits.js"></script>
   <script src="makepdf.js"></script>
-  <!--<script src="fillpdf.js"></script>-->
+  
 
   <!-- Developer JS -->
- <!--
-  <script>
-      var myViewerDiv = document.getElementById('MyViewerDiv');
-      var viewer = new Autodesk.Viewing.Private.GuiViewer3D(myViewerDiv);
-      var options = {
-          'env' : 'Local',
-          'extensions' : ['BasicBits'],
-          'document' : './House/f0224dd3-8767-45c1-ff99-5c9c881b9fee/0.svf'
-      };
-      Autodesk.Viewing.Initializer(options, function() {
-        viewer.start(options.document, options);
-      });
-      
-  </script>
-  -->
 </body>
 
 </html>

@@ -18,8 +18,6 @@
             return;
         }
 
-        console.log('Initialization complete, loading a model next...');
-
     });
 
 
@@ -46,10 +44,8 @@
 
     MyAwesomeExtension.prototype.onSelectionEvent = function(event) {
         currSelection = this.viewer.getSelection();
-        console.log(currSelection);
         var thePromise = viewer.model.getPropertyDb().executeUserFunction( userFunction, currSelection);
         thePromise.then(function(retValue){
-            console.log(retValue);
             currentItem = retValue;
         }).catch(function(err){
         console.log("Something didn't go right...")
@@ -63,7 +59,6 @@
         return true;
     };
    function userFunction(pdb, userData) { 
-        console.log(pdb.getObjectProperties(userData[0]));
         return pdb.getObjectProperties(userData[0]);
     }
 
@@ -130,8 +125,6 @@
                 b.style.display = "none";
                 cereretipArray.push(currentItem);
                 cereretipArrayDescription.push(document.getElementById("descriptionInput").value);
-                console.log(cereretipArray);
-                console.log(cereretipArrayDescription);
 
                 let node = document.createElement("li");
                 node.className = "listObiecteliObj";
@@ -188,8 +181,6 @@
                 b.style.display = "none";
                 apeleRoamneArray.push(currentItem);
                 apeleRoamneDescription.push(document.getElementById("descriptionInputApeleRoamne").value);
-                console.log(apeleRoamneArray);
-                console.log(apeleRoamneDescription);
 
                 let node = document.createElement("li");
                 node.className = "listObiecteliObj";
@@ -244,9 +235,6 @@
                 b.style.display = "none";
                 mediuArray.push(currentItem);
                 mediuArrayDescription.push(document.getElementById("descriptionInputMediu").value);
-                console.log(mediuArray);
-                console.log(mediuArrayDescription);
-
                 let node = document.createElement("li");
                 node.className = "listObiecteliObj";
                 let textnode = currentItem.name;
@@ -300,8 +288,6 @@
                 b.style.display = "none";
                 sanatateArray.push(currentItem);
                 sanatateArrayDescription.push(document.getElementById("descriptionInputSanatate").value);
-                console.log(sanatateArray);
-                console.log(sanatateArrayDescription);
 
                 let node = document.createElement("li");
                 node.className = "listObiecteliObj";
@@ -356,8 +342,6 @@
                 b.style.display = "none";
                 isuArray.push(currentItem);
                 isuArrayDescription.push(document.getElementById("descriptionInputISU").value);
-                console.log(isuArray);
-                console.log(isuArrayDescription);
 
                 let node = document.createElement("li");
                 node.className = "listObiecteliObj";
