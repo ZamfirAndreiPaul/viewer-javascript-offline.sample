@@ -1,6 +1,6 @@
 const { PDFDocument, StandardFonts, rgb } = PDFLib
 
-document.getElementById("fillpdf").onclick = function(){
+document.getElementById("fillpdf").onclick=function(){
     fillForm();
 };
 async function createPdf() {
