@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://developer.api.autodesk.com/modelderivative/v2/viewers/style.min.css?v=v7.*" type="text/css">
   <script language="JavaScript" src="https://developer.api.autodesk.com/modelderivative/v2/viewers/viewer3D.min.js?v=v7.*"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.1.1/jspdf.umd.min.js"></script>
+  
   <link rel="stylesheet" href="basicbits.css" type="text/css">
 
 </head>
@@ -63,14 +64,14 @@
       </div>
       <button class="leftButton">Planuri Topografice</button>
       <button class="leftButton">Chitanta Plata Taxa</button>
-      <button class="leftButton">Plan de Situatie</button>
+      <button class="leftButton" id ="fillpdf">Plan de Situatie</button>
       <button class="pdfButton" id="makepdftest">Export PDF File</button>
     </div>
   </div>
   
   <script src="basicbits.js"></script>
-
   <script src="makepdf.js"></script>
+  <script src="fillpdf.js"></script>
 
   <!-- Developer JS -->
  <!--
