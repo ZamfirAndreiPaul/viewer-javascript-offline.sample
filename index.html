@@ -22,15 +22,49 @@
     <div id="leftSide">
       <img src="images/logo.jpg" alt="logo basicbits" class="logoImage">
       <button class="leftButton" id="test1">Act de Propietate</button>
-      <button class="leftButton">Cerere Tip</button>
-      <table>
+      <button class="leftButton" id="cereretip">Cerere Tip</button>
+      <div class = "divObj" id="objMenu">
+        <ul class="listButtons">
+          <li class="listButtonsli">
+              <button class="listButtonAdd" id="addObj">ADD</button>
+          </li>
+          <li class="listButtonsli">
+              <button class="listButtonDelete">DELETE</button>
+          </li>
+        </ul>
+
+        <div id="popupDiv">
+          <ul class="popupObjAddList">
+            <li>
+              <p class="descriptionObj">Description: </p>
+            </li>
+            <li>
+              <p class="warningPhrase" id="warningPhraseId">Descrierea este goala!</p>
+            </li>
+            <li class="popupObjAddListLi">
+              <input type="text" id="descriptionInput">
+            </li>
+            <li class="popupObjAddListLi">
+              <button class="listButtonAdd" id="addFinal">ADD</button>
+            </li>
+          </ul>
+        </div>
         
-      </table>
+        <ul class="listObiecte">
+
+          <li class="listObiecteliObj">Basic Roof [630771]</li>
+          <li class="listObiecteliDescriere">Descriere: Instabil</li>
+
+          <li class="listObiecteliObj">Basic Wall [639303]</li>
+          <li class="listObiecteliDescriere">Descriere: Necesita Stingator</li>
+
+        </ul>
+
+      </div>
       <button class="leftButton">Planuri Topografice</button>
       <button class="leftButton">Chitanta Plata Taxa</button>
       <button class="leftButton">Plan de Situatie</button>
       <button class="pdfButton" id="makepdftest">Export PDF File</button>
-      <button class="supportButton">Support</button>
     </div>
   </div>
   

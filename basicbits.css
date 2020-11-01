@@ -83,47 +83,6 @@ body {
     margin-top: 50px;
 }
 
-.supportButton{
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border: none;
-    text-align: center;
-    background-color:#1360b6;
-    position: absolute;
-    bottom: 0;
-    margin-left: 30px;
-    margin-bottom: 30px;
-    font-family: CourierPrime;
-    text-decoration: none;
-    display: block;
-    color: white;
-    font-size: 16px;
-    border-radius: 4px;
-}
-
-.supportButton:hover{
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border: none;
-    text-align: center;
-    background-color:#1360b6;
-    position: absolute;
-    bottom: 0;
-    margin-left: 30px;
-    margin-bottom: 30px;
-    font-family: CourierPrime;
-    text-decoration: none;
-    display: block;
-    color: white;
-    font-size: 16px;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
 .pdfButton{
     padding-left: 80px;
     padding-right: 80px;
@@ -165,7 +124,87 @@ body {
 
 .show-env-bg-button {
     background: red;
-  }
-  .hide-env-bg-button {
+}
+.hide-env-bg-button {
     background: blue;
-  }
+}
+
+.listButtons {
+    list-style-type: none;
+}
+
+.listButtonsli {
+    display: inline;
+}
+
+.listButtonAdd {
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    text-align: center;
+    background-color: #1a7ce1;
+    color:white;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: CourierPrime;
+}
+
+.listButtonDelete {
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    text-align: center;
+    background-color:orangered;
+    color:white;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: CourierPrime;
+}
+
+.listObiecte{
+    list-style-type: none;
+}
+
+.listObiecteliObj{
+    width: 85%;
+    color:white;
+    border: 2px solid #acc7f2;
+    padding: 3px;
+    margin-top: 10px;
+}
+
+.listObiecteliDescriere{
+    width: 85%;
+    color:white;
+    border: 2px solid #e6c550;
+    padding: 3px;
+}
+
+.divObj{
+    display: none;
+}
+
+.popupObjAddList{
+    list-style-type: none;
+}
+.popupObjAddListLi{
+    display: inline;
+}
+
+.descriptionObj{
+    color:white;
+    font-family: CourierPrime;
+}
+
+#popupDiv{
+    display: none;
+}
+.warningPhrase{
+    display: none;
+    color:red;
+    font-family: CourierPrime;
+    margin-left: auto;
+    margin-right: auto;
+}

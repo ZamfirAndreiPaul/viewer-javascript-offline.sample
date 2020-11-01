@@ -96,8 +96,49 @@
         toolbar.addControl(this.subToolbar);
     };
   
-  document.getElementById("test1").onclick = function(){
-    console.log(currentItem);
-  };
+    document.getElementById("test1").onclick = function(){
+        console.log(currentItem);
+    };
 
-  Autodesk.Viewing.theExtensionManager.registerExtension('MyAwesomeExtension', MyAwesomeExtension);
+    document.getElementById("cereretip").onclick = function(){
+        let a = document.getElementById("objMenu");
+        let b = document.getElementById("warningPhraseId");
+        b.style.display = "none";
+        if (a.style.display === "none") {
+        a.style.display = "block";
+        } else {
+        a.style.display = "none";
+        }
+    };
+
+    document.getElementById("addObj").onclick = function(){
+        let a = document.getElementById("popupDiv");
+        if (a.style.display === "none") {
+            a.style.display = "block";
+        } else {
+            a.style.display = "none";
+        }
+    };
+
+    var cereretipArray = [];
+    var cereretipArrayDescription = [];
+
+    document.getElementById("addFinal").onclick = function(){
+            let b = document.getElementById("warningPhraseId");
+            let a = document.getElementById("popupDiv");
+            if(document.getElementById("descriptionInput").value !== "")
+            {
+                a.style.display = "none";
+                b.style.display = "none";
+                cereretipArray.push(currentItem.name);
+                cereretipArrayDescription.push(document.getElementById("descriptionInput").value);
+                console.log(cereretipArray);
+                console.log(cereretipArrayDescription);
+            }
+            else{
+                console.log("test");
+                b.style.display = "block";
+            }
+    };
+
+    Autodesk.Viewing.theExtensionManager.registerExtension('MyAwesomeExtension', MyAwesomeExtension);
