@@ -95,10 +95,8 @@
       
         toolbar.addControl(this.subToolbar);
     };
-  
-    document.getElementById("test1").onclick = function(){
-        console.log(currentItem);
-    };
+
+    // BUTON ENERGIE ELECTRICA
 
     document.getElementById("cereretip").onclick = function(){
         let a = document.getElementById("objMenu");
@@ -137,7 +135,178 @@
                 console.log(cereretipArrayDescription);
             }
             else{
-                console.log("test");
+                b.style.display = "block";
+            }
+    };
+
+    // BUTON APELE ROMANE
+
+    document.getElementById("apeleroamane").onclick = function(){
+        let a = document.getElementById("objMenuApeleRoamne");
+        let b = document.getElementById("warningPhraseIdApeleRoamne");
+        b.style.display = "none";
+        if (a.style.display === "none") {
+        a.style.display = "block";
+        } else {
+        a.style.display = "none";
+        }
+    };
+
+    document.getElementById("addObjApeleRoamne").onclick = function(){
+        let a = document.getElementById("popupDivApeleRoamne");
+        if (a.style.display === "none") {
+            a.style.display = "block";
+        } else {
+            a.style.display = "none";
+        }
+    };
+
+    var apeleRoamneArray = [];
+    var apeleRoamneDescription = [];
+
+    document.getElementById("addFinalApeleRoamne").onclick = function(){
+            let b = document.getElementById("warningPhraseIdApeleRoamne");
+            let a = document.getElementById("popupDivApeleRoamne");
+            if(document.getElementById("descriptionInputApeleRoamne").value !== "")
+            {
+                a.style.display = "none";
+                b.style.display = "none";
+                apeleRoamneArray.push(currentItem.name);
+                apeleRoamneDescription.push(document.getElementById("descriptionInputApeleRoamne").value);
+                document.getElementById("descriptionInputApeleRoamne").value = "";
+                console.log(apeleRoamneArray);
+                console.log(apeleRoamneDescription);
+            }
+            else{
+                b.style.display = "block";
+            }
+    };
+
+    // BUTON MEDIU
+
+    document.getElementById("mediuBtn").onclick = function(){
+        let a = document.getElementById("objMenuMediu");
+        let b = document.getElementById("warningPhraseIdMediu");
+        b.style.display = "none";
+        if (a.style.display === "none") {
+        a.style.display = "block";
+        } else {
+        a.style.display = "none";
+        }
+    };
+
+    document.getElementById("addObjMediu").onclick = function(){
+        let a = document.getElementById("popupDivMediu");
+        if (a.style.display === "none") {
+            a.style.display = "block";
+        } else {
+            a.style.display = "none";
+        }
+    };
+
+    var mediuArray = [];
+    var mediuArrayDescription = [];
+
+    document.getElementById("addFinalMediu").onclick = function(){
+            let b = document.getElementById("warningPhraseIdMediu");
+            let a = document.getElementById("popupDivMediu");
+            if(document.getElementById("descriptionInputMediu").value !== "")
+            {
+                a.style.display = "none";
+                b.style.display = "none";
+                mediuArray.push(currentItem.name);
+                mediuArrayDescription.push(document.getElementById("descriptionInputMediu").value);
+                document.getElementById("descriptionInputMediu").value = "";
+                console.log(mediuArray);
+                console.log(mediuArrayDescription);
+            }
+            else{
+                b.style.display = "block";
+            }
+    };
+
+    // BUTON SANATATE
+
+    document.getElementById("sanatateBtn").onclick = function(){
+        let a = document.getElementById("objMenuSanatate");
+        let b = document.getElementById("warningPhraseIdSanatate");
+        b.style.display = "none";
+        if (a.style.display === "none") {
+        a.style.display = "block";
+        } else {
+        a.style.display = "none";
+        }
+    };
+
+    document.getElementById("addObjSanatate").onclick = function(){
+        let a = document.getElementById("popupDivSanatate");
+        if (a.style.display === "none") {
+            a.style.display = "block";
+        } else {
+            a.style.display = "none";
+        }
+    };
+
+    var sanatateArray = [];
+    var sanatateArrayDescription = [];
+
+    document.getElementById("addFinalSanatate").onclick = function(){
+            let b = document.getElementById("warningPhraseIdSanatate");
+            let a = document.getElementById("popupDivSanatate");
+            if(document.getElementById("descriptionInputSanatate").value !== "")
+            {
+                a.style.display = "none";
+                b.style.display = "none";
+                sanatateArray.push(currentItem.name);
+                sanatateArrayDescription.push(document.getElementById("descriptionInput").value);
+                document.getElementById("descriptionInputSanatate").value = "";
+                console.log(sanatateArray);
+                console.log(sanatateArrayDescription);
+            }
+            else{
+                b.style.display = "block";
+            }
+    };
+
+    // BUTON ISU
+
+    document.getElementById("isuBtn").onclick = function(){
+        let a = document.getElementById("objMenuISU");
+        let b = document.getElementById("warningPhraseIdISU");
+        b.style.display = "none";
+        if (a.style.display === "none") {
+        a.style.display = "block";
+        } else {
+        a.style.display = "none";
+        }
+    };
+
+    document.getElementById("addObjISU").onclick = function(){
+        let a = document.getElementById("popupDivISU");
+        if (a.style.display === "none") {
+            a.style.display = "block";
+        } else {
+            a.style.display = "none";
+        }
+    };
+
+    var isuArray = [];
+    var isuArrayDescription = [];
+
+    document.getElementById("addFinalISU").onclick = function(){
+            let b = document.getElementById("warningPhraseIdISU");
+            let a = document.getElementById("popupDivISU");
+            if(document.getElementById("descriptionInput").value !== "")
+            {
+                a.style.display = "none";
+                b.style.display = "none";
+                isuArray.push(currentItem.name);
+                isuArrayDescription.push(document.getElementById("descriptionInputISU").value);
+                document.getElementById("descriptionInputISU").value = "";
+                console.log(isuArray);
+                console.log(isuArrayDescription);
+            }
+            else{
                 b.style.display = "block";
             }
     };
