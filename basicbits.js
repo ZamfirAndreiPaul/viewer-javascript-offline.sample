@@ -130,16 +130,29 @@
                 b.style.display = "none";
                 cereretipArray.push(currentItem);
                 cereretipArrayDescription.push(document.getElementById("descriptionInput").value);
-                document.getElementById("descriptionInput").value = "";
                 console.log(cereretipArray);
                 console.log(cereretipArrayDescription);
+
+                let node = document.createElement("li");
+                node.className = "listObiecteliObj";
+                let textnode = currentItem.name;
+                node.innerHTML = textnode;
+                document.getElementById("listaEnergie").appendChild(node);
+
+                node = document.createElement("li");
+                node.className = "listObiecteliDescriere";
+                textnode = "Descriere: " + document.getElementById("descriptionInput").value;
+                node.innerHTML = textnode;
+                document.getElementById("listaEnergie").appendChild(node);
+                document.getElementById("descriptionInput").value = "";
+
             }
             else{
                 b.style.display = "block";
             }
     };
 
-    
+
 
     // BUTON APELE ROMANE
 
@@ -175,9 +188,22 @@
                 b.style.display = "none";
                 apeleRoamneArray.push(currentItem);
                 apeleRoamneDescription.push(document.getElementById("descriptionInputApeleRoamne").value);
-                document.getElementById("descriptionInputApeleRoamne").value = "";
                 console.log(apeleRoamneArray);
                 console.log(apeleRoamneDescription);
+
+                let node = document.createElement("li");
+                node.className = "listObiecteliObj";
+                let textnode = currentItem.name;
+                node.innerHTML = textnode;
+                document.getElementById("listaApe").appendChild(node);
+
+                node = document.createElement("li");
+                node.className = "listObiecteliDescriere";
+                textnode = "Descriere: " + document.getElementById("descriptionInputApeleRoamne").value;
+                node.innerHTML = textnode;
+                document.getElementById("listaApe").appendChild(node);
+                document.getElementById("descriptionInputApeleRoamne").value = "";
+
             }
             else{
                 b.style.display = "block";
@@ -218,9 +244,22 @@
                 b.style.display = "none";
                 mediuArray.push(currentItem);
                 mediuArrayDescription.push(document.getElementById("descriptionInputMediu").value);
-                document.getElementById("descriptionInputMediu").value = "";
                 console.log(mediuArray);
                 console.log(mediuArrayDescription);
+
+                let node = document.createElement("li");
+                node.className = "listObiecteliObj";
+                let textnode = currentItem.name;
+                node.innerHTML = textnode;
+                document.getElementById("listaMediu").appendChild(node);
+
+                node = document.createElement("li");
+                node.className = "listObiecteliDescriere";
+                textnode = "Descriere: " + document.getElementById("descriptionInputMediu").value;
+                node.innerHTML = textnode;
+                document.getElementById("listaMediu").appendChild(node);
+                document.getElementById("descriptionInputMediu").value = "";
+
             }
             else{
                 b.style.display = "block";
@@ -260,10 +299,23 @@
                 a.style.display = "none";
                 b.style.display = "none";
                 sanatateArray.push(currentItem);
-                sanatateArrayDescription.push(document.getElementById("descriptionInput").value);
-                document.getElementById("descriptionInputSanatate").value = "";
+                sanatateArrayDescription.push(document.getElementById("descriptionInputSanatate").value);
                 console.log(sanatateArray);
                 console.log(sanatateArrayDescription);
+
+                let node = document.createElement("li");
+                node.className = "listObiecteliObj";
+                let textnode = currentItem.name;
+                node.innerHTML = textnode;
+                document.getElementById("listaSanatate").appendChild(node);
+
+                node = document.createElement("li");
+                node.className = "listObiecteliDescriere";
+                textnode = "Descriere: " + document.getElementById("descriptionInputSanatate").value;
+                node.innerHTML = textnode;
+                document.getElementById("listaSanatate").appendChild(node);
+                document.getElementById("descriptionInputSanatate").value = "";
+
             }
             else{
                 b.style.display = "block";
@@ -298,15 +350,27 @@
     document.getElementById("addFinalISU").onclick = function(){
             let b = document.getElementById("warningPhraseIdISU");
             let a = document.getElementById("popupDivISU");
-            if(document.getElementById("descriptionInput").value !== "")
+            if(document.getElementById("descriptionInputISU").value !== "")
             {
                 a.style.display = "none";
                 b.style.display = "none";
                 isuArray.push(currentItem);
                 isuArrayDescription.push(document.getElementById("descriptionInputISU").value);
-                document.getElementById("descriptionInputISU").value = "";
                 console.log(isuArray);
                 console.log(isuArrayDescription);
+
+                let node = document.createElement("li");
+                node.className = "listObiecteliObj";
+                let textnode = currentItem.name;
+                node.innerHTML = textnode;
+                document.getElementById("listaISU").appendChild(node);
+
+                node = document.createElement("li");
+                node.className = "listObiecteliDescriere";
+                textnode = "Descriere: " + document.getElementById("descriptionInputISU").value;
+                node.innerHTML = textnode;
+                document.getElementById("listaISU").appendChild(node);
+                document.getElementById("descriptionInputISU").value = "";
             }
             else{
                 b.style.display = "block";
