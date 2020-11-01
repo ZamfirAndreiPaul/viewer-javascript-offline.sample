@@ -4,22 +4,37 @@ const { jsPDF } = window.jspdf;
 var test1='testare var';
 document.getElementById("makepdftest").onclick = function(){
     
-    var doc = new jsPDF("p", "mm", "a4");
+    var doc = new jsPDF({
+        orientation: 'p',
+        unit: 'mm',
+        format: 'a4',
+        putOnlyUsedFonts:true 
+    });
     var text = [];
-    for (var i in cereretipArray){
-        text.push(cereretipArray[i].name + '  ' + cereretipArrayDescription[i])
+    var line=10;
+    doc.text("Aviz: ", 20, line);
+    line+=30;
+    var i=0;
+    if(cereretipArray && cereretipArray.length){
+        for (i in cereretipArray){
+            text.push(cereretipArray[i].name + '  ' + cereretipArrayDescription[i])
+        }
+        doc.text("Probleme: ", 20, line);
+        doc.setFont('times','normal');
+        doc.text(text, 20, line=line+10);
+        doc.text('Status: ', 20, line=line+10);
+        doc.setTextColor(255,0,0);
+        doc.text('Dezaprobat ', 20, line=line+10);
+        doc.setTextColor(255,255,255);
+    }else{
+        doc.text("Fara probleme", 20, line=line+10);
+        line= line+i*10;
+        doc.text('Status: ', 20, line=line+10);
+        doc.setTextColor(0,255,0);
+        doc.text('Aprobat ', 20, line=line+10);
+        doc.setTextColor(255,255,255);
     }
-    doc.text(text, 10, 10);
-
-    doc.text('This is '+test1+'the default font.',20,20);
-    doc.setFont('courier','normal');
-    doc.text('This is courier normal.',20, 30);
-    doc.setFont('times','italic');
-    doc.text( 'This is times italic.',20, 40);
-    doc.setFont('helvetica','bold');
-    doc.text( 'This is helvetica bold.',20, 50);
-    doc.setFont('courier','bolditalic');
-    doc.text('This is courier bolditalic.',20, 60) ;   
+    
     doc.save('a4.pdf');
     console.log("PDF Creat");
 };
