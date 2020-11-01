@@ -46,9 +46,9 @@ async function createPdf() {
       const footbalField = form.getCheckBox('football')
       const baseballField = form.getCheckBox('baseball')
     
-      lastnameField.setText('Mario')
-      firstnameField.setText('24 years')
-      locationField.setText(`5' 1"`)
+      lastnameField.setText('Dinu')
+      firstnameField.setText('Alexandru')
+      locationField.setText('Australia')
       baseballField.check()
     
       const pdfBytes = await pdfDoc.save()
