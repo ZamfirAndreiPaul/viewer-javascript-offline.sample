@@ -23,8 +23,10 @@
     </div>
     <div id="leftSide">
       <img src="images/logo.jpg" alt="logo basicbits" class="logoImage">
-      <button class="leftButton" id="test1">Act de Propietate</button>
-      <button class="leftButton" id="cereretip">Cerere Tip</button>
+      
+      <!-- BUTON ENERGIE ELECTRICA-->
+      <button class="leftButton" id="cereretip">Aviz privind energia electrica</button>
+      <!------------------------------------------------->
       <div class = "divObj" id="objMenu">
         <ul class="listButtons">
           <li class="listButtonsli">
@@ -63,9 +65,175 @@
         </ul>
 
       </div>
-      <button class="leftButton">Planuri Topografice</button>
-      <button class="leftButton">Chitanta Plata Taxa</button>
-      <button class="leftButton" id ="fillpdf">Plan de Situatie</button>
+      <!------------------------------------------------->
+      <!-- BUTON APELE ROAMANE-->
+      <button class="leftButton" id="apeleroamane">Aviz de la apele romane</button>
+
+      <div class = "divObj" id="objMenuApeleRoamne">
+        <ul class="listButtons">
+          <li class="listButtonsli">
+              <button class="listButtonAdd" id="addObjApeleRoamne">ADD</button>
+          </li>
+          <li class="listButtonsli">
+              <button class="listButtonDelete">DELETE</button>
+          </li>
+        </ul>
+
+        <div id="popupDivApeleRoamne">
+          <ul class="popupObjAddList">
+            <li>
+              <p class="descriptionObj">Description: </p>
+            </li>
+            <li>
+              <p class="warningPhrase" id="warningPhraseIdApeleRoamne">Descrierea este goala!</p>
+            </li>
+            <li class="popupObjAddListLi">
+              <input type="text" id="descriptionInputApeleRoamne">
+            </li>
+            <li class="popupObjAddListLi">
+              <button class="listButtonAdd" id="addFinalApeleRoamne">ADD</button>
+            </li>
+          </ul>
+        </div>
+        
+        <ul class="listObiecte">
+
+          <li class="listObiecteliObj">Basic Roof [630771]</li>
+          <li class="listObiecteliDescriere">Descriere: Instabil</li>
+
+          <li class="listObiecteliObj">Basic Wall [639303]</li>
+          <li class="listObiecteliDescriere">Descriere: Necesita Stingator</li>
+
+        </ul>
+
+      </div>
+
+      <!-- BUTON MEDIU-->
+      <button class="leftButton" id="mediuBtn">Aviz de mediu</button>
+
+      <div class = "divObj" id="objMenuMediu">
+        <ul class="listButtons">
+          <li class="listButtonsli">
+              <button class="listButtonAdd" id="addObjMediu">ADD</button>
+          </li>
+          <li class="listButtonsli">
+              <button class="listButtonDelete">DELETE</button>
+          </li>
+        </ul>
+
+        <div id="popupDivMediu">
+          <ul class="popupObjAddList">
+            <li>
+              <p class="descriptionObj">Description: </p>
+            </li>
+            <li>
+              <p class="warningPhrase" id="warningPhraseIdMediu">Descrierea este goala!</p>
+            </li>
+            <li class="popupObjAddListLi">
+              <input type="text" id="descriptionInputMediu">
+            </li>
+            <li class="popupObjAddListLi">
+              <button class="listButtonAdd" id="addFinalMediu">ADD</button>
+            </li>
+          </ul>
+        </div>
+        
+        <ul class="listObiecte">
+
+          <li class="listObiecteliObj">Basic Roof [630771]</li>
+          <li class="listObiecteliDescriere">Descriere: Instabil</li>
+
+          <li class="listObiecteliObj">Basic Wall [639303]</li>
+          <li class="listObiecteliDescriere">Descriere: Necesita Stingator</li>
+
+        </ul>
+
+      </div>
+
+      <!-- BUTON SANATATE-->
+      <button class="leftButton" id="sanatateBtn">Aviz sanatatea populatiei</button>
+
+      <div class = "divObj" id="objMenuSanatate">
+        <ul class="listButtons">
+          <li class="listButtonsli">
+              <button class="listButtonAdd" id="addObjSanatate">ADD</button>
+          </li>
+          <li class="listButtonsli">
+              <button class="listButtonDelete">DELETE</button>
+          </li>
+        </ul>
+
+        <div id="popupDivSanatate">
+          <ul class="popupObjAddList">
+            <li>
+              <p class="descriptionObj">Description: </p>
+            </li>
+            <li>
+              <p class="warningPhrase" id="warningPhraseIdSanatate">Descrierea este goala!</p>
+            </li>
+            <li class="popupObjAddListLi">
+              <input type="text" id="descriptionInputSanatate">
+            </li>
+            <li class="popupObjAddListLi">
+              <button class="listButtonAdd" id="addFinalSanatate">ADD</button>
+            </li>
+          </ul>
+        </div>
+        
+        <ul class="listObiecte">
+
+          <li class="listObiecteliObj">Basic Roof [630771]</li>
+          <li class="listObiecteliDescriere">Descriere: Instabil</li>
+
+          <li class="listObiecteliObj">Basic Wall [639303]</li>
+          <li class="listObiecteliDescriere">Descriere: Necesita Stingator</li>
+
+        </ul>
+
+      </div>
+
+      <!-- BUTON ISU-->
+      <button class="leftButton" id ="isuBtn">Aviz ISU</button>
+
+      <div class = "divObj" id="objMenuISU">
+        <ul class="listButtons">
+          <li class="listButtonsli">
+              <button class="listButtonAdd" id="addObjISU">ADD</button>
+          </li>
+          <li class="listButtonsli">
+              <button class="listButtonDelete">DELETE</button>
+          </li>
+        </ul>
+
+        <div id="popupDivISU">
+          <ul class="popupObjAddList">
+            <li>
+              <p class="descriptionObj">Description: </p>
+            </li>
+            <li>
+              <p class="warningPhrase" id="warningPhraseIdISU">Descrierea este goala!</p>
+            </li>
+            <li class="popupObjAddListLi">
+              <input type="text" id="descriptionInputISU">
+            </li>
+            <li class="popupObjAddListLi">
+              <button class="listButtonAdd" id="addFinalISU">ADD</button>
+            </li>
+          </ul>
+        </div>
+        
+        <ul class="listObiecte">
+
+          <li class="listObiecteliObj">Basic Roof [630771]</li>
+          <li class="listObiecteliDescriere">Descriere: Instabil</li>
+
+          <li class="listObiecteliObj">Basic Wall [639303]</li>
+          <li class="listObiecteliDescriere">Descriere: Necesita Stingator</li>
+
+        </ul>
+
+      </div>
+
       <button class="pdfButton" id="makepdftest">Export PDF File</button>
     </div>
   </div>

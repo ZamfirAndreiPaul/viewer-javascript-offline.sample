@@ -201,6 +201,24 @@ body {
 #popupDiv{
     display: none;
 }
+
+#popupDivApeleRoamne{
+    display: none;
+}
+
+#popupDivMediu{
+    display: none;
+}
+
+#popupDivSanatate{
+    display: none;
+}
+
+#popupDivISU{
+    display: none;
+}
+
+
 .warningPhrase{
     display: none;
     color:red;
